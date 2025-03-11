@@ -19,6 +19,32 @@
       position: relative;
       margin: 20px;
     }
+    nav a:hover {
+      background-color: rgb(162, 255, 0);
+    }
+
+    nav a::before {
+      content: '';
+      display: block;
+      height: 4px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      background-color: rgb(4, 0, 245);
+      transition: width ease-in-out 200ms;
+    }
+
+    nav a:hover::before {
+      width: 100%;
+    }
+
+    header {
+      background-color: deepskyblue;
+      width: 100%;
+      height: fit-content;
+      text-align: center;
+    }
     </style>
 </head>
 <body>
